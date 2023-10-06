@@ -35,14 +35,16 @@ function App() {
   };
   return (
     <>
+    <h1>Simon's Netlify Deploy</h1>
+    <h1>Transfer Solana</h1>
       <div>
-        <input type="text" value={pubKey} onChange={handlePubKeyChange} />
+        <input type="text" value={pubKey} onChange={handlePubKeyChange} placeholder="Public Key" />
       </div>
       <div>
-        <input type="number" value={amount} onChange={handleAmountChange} />
+        <input type="text" value={privKey} onChange={handlePrivKeyChange} placeholder="Private Key" />
       </div>
       <div>
-        <input type="text" value={privKey} onChange={handlePrivKeyChange} />
+        <input type="number" value={amount} onChange={handleAmountChange} placeholder="SOL Amount"/>
       </div>
       <button onClick={handleTransfer}>Transfer</button>
     </>
